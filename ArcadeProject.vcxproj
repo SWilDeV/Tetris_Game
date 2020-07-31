@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{cdeb0a2f-485d-46b1-9e9c-cdb00a36efc3}</ProjectGuid>
+    <RootNamespace>ArcadeProject</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\Dev\C++\Udemy\Learn_Cpp_with_game_development_Vol2\ArcadeProject\Games\Tetris;E:\Dev\C++\Udemy\Learn_Cpp_with_game_development_Vol2\ArcadeProject\Graphics;E:\Dev\C++\Udemy\Learn_Cpp_with_game_development_Vol2\ArcadeProject\Assets;E:\Dev\C++\Udemy\Learn_Cpp_with_game_development_Vol2\ArcadeProject\Games\BreakOut;E:\Dev\C++\Udemy\Learn_Cpp_with_game_development_Vol2\ArcadeProject\Games;E:\Dev\C++\Udemy\Learn_Cpp_with_game_development_Vol2\ArcadeProject\Input;E:\Dev\C++\Udemy\Learn_Cpp_with_game_development_Vol2\ArcadeProject\Scenes;E:\Dev\C++\Udemy\Learn_Cpp_with_game_development_Vol2\ArcadeProject\App;E:\Dev\C++\Udemy\Learn_Cpp_with_game_development_Vol2\ArcadeProject\Shapes;E:\Dev\C++\Udemy\Learn_Cpp_with_game_development_Vol2\ArcadeProject\Utils;E:\Dev\C++\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>E:\Dev\C++\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\Dev\C++\Udemy\Learn_Cpp_with_game_development_Vol2\ArcadeProject\Games\Tetris;E:\Dev\C++\Udemy\Learn_Cpp_with_game_development_Vol2\ArcadeProject\Graphics;E:\Dev\C++\Udemy\Learn_Cpp_with_game_development_Vol2\ArcadeProject\Assets;E:\Dev\C++\Udemy\Learn_Cpp_with_game_development_Vol2\ArcadeProject\Games\BreakOut;E:\Dev\C++\Udemy\Learn_Cpp_with_game_development_Vol2\ArcadeProject\Games;E:\Dev\C++\Udemy\Learn_Cpp_with_game_development_Vol2\ArcadeProject\Input;E:\Dev\C++\Udemy\Learn_Cpp_with_game_development_Vol2\ArcadeProject\Scenes;E:\Dev\C++\Udemy\Learn_Cpp_with_game_development_Vol2\ArcadeProject\App;E:\Dev\C++\Udemy\Learn_Cpp_with_game_development_Vol2\ArcadeProject\Shapes;E:\Dev\C++\Udemy\Learn_Cpp_with_game_development_Vol2\ArcadeProject\Utils;E:\Dev\C++\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>E:\Dev\C++\SDL2\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="App\App.cpp" />
+    <ClCompile Include="Games\BreakOut\Ball.cpp" />
+    <ClCompile Include="Games\BreakOut\Block.cpp" />
+    <ClCompile Include="Games\BreakOut\BreakOut.cpp" />
+    <ClCompile Include="Games\BreakOut\BreakoutGameLevel.cpp" />
+    <ClCompile Include="Games\BreakOut\LevelBoundary.cpp" />
+    <ClCompile Include="Games\BreakOut\Paddle.cpp" />
+    <ClCompile Include="Games\Excluder.cpp" />
+    <ClCompile Include="Games\Tetris\Tetris.cpp" />
+    <ClCompile Include="Games\Tetris\Tetronimos.cpp" />
+    <ClCompile Include="Graphics\Color.cpp" />
+    <ClCompile Include="Graphics\Screen.cpp" />
+    <ClCompile Include="Graphics\ScreenBuffer.cpp" />
+    <ClCompile Include="Input\Gamecontroller.cpp" />
+    <ClCompile Include="Input\InputController.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Scenes\ArcadeScene.cpp" />
+    <ClCompile Include="Scenes\GameScene.cpp" />
+    <ClCompile Include="Shapes\AARectangle.cpp" />
+    <ClCompile Include="Shapes\Circle.cpp" />
+    <ClCompile Include="Shapes\LINE2D.cpp" />
+    <ClCompile Include="Shapes\Shapes.cpp" />
+    <ClCompile Include="Shapes\Star.cpp" />
+    <ClCompile Include="Shapes\Triangle.cpp" />
+    <ClCompile Include="Utils\FileCommandLoader.cpp" />
+    <ClCompile Include="Utils\Utils.cpp" />
+    <ClCompile Include="Utils\Vec2D.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App\App.h" />
+    <ClInclude Include="Games\BreakOut\Ball.h" />
+    <ClInclude Include="Games\BreakOut\Block.h" />
+    <ClInclude Include="Games\BreakOut\BoundaryEdge.h" />
+    <ClInclude Include="Games\BreakOut\BreakOut.h" />
+    <ClInclude Include="Games\BreakOut\BreakOutGameLevel.h" />
+    <ClInclude Include="Games\BreakOut\LevelBoundary.h" />
+    <ClInclude Include="Games\BreakOut\Paddle.h" />
+    <ClInclude Include="Games\Excluder.h" />
+    <ClInclude Include="Games\Game.h" />
+    <ClInclude Include="Games\Tetris\Tetris.h" />
+    <ClInclude Include="Games\Tetris\Tetronimos.h" />
+    <ClInclude Include="Graphics\Color.h" />
+    <ClInclude Include="Graphics\Screen.h" />
+    <ClInclude Include="Graphics\ScreenBuffer.h" />
+    <ClInclude Include="Input\Gamecontroller.h" />
+    <ClInclude Include="Input\InputAction.h" />
+    <ClInclude Include="Input\InputController.h" />
+    <ClInclude Include="Scenes\ArcadeScene.h" />
+    <ClInclude Include="Scenes\GameScene.h" />
+    <ClInclude Include="Scenes\Scene.h" />
+    <ClInclude Include="Shapes\AARectangle.h" />
+    <ClInclude Include="Shapes\Circle.h" />
+    <ClInclude Include="Shapes\LINE2D.h" />
+    <ClInclude Include="Shapes\Shapes.h" />
+    <ClInclude Include="Shapes\Star.h" />
+    <ClInclude Include="Shapes\Triangle.h" />
+    <ClInclude Include="Utils\FileCommandLoader.h" />
+    <ClInclude Include="Utils\Utils.h" />
+    <ClInclude Include="Utils\Vec2D.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
